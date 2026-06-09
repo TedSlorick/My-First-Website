@@ -1,1 +1,29 @@
 /* Stylesheet for My First Website - Just Messing Around */
+
+body {
+    margin: 40px;
+    color: #101828;
+    font-family: "Manrope";
+}
+
+h1 {
+    text-align: center;
+    font-size: 58px;
+    font-weight: 800;
+    }
+
+p {
+    font-weight: 500;
+}
+
+#dog {
+    position: relative;
+    height: 200px;
+    width: auto;
+}
+
+.line-separator {
+    height: 2px;
+    width: 100%;
+    background-color: #101828;    
+}
