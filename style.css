@@ -16,10 +16,16 @@ p {
     font-weight: 500;
 }
 
+/* I centered the image of the dog but don't understand why this is so
+challenging or why the display: block; is necessary */
+
 #dog {
     position: relative;
     height: 200px;
     width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .line-separator {
