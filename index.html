@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    
+<body>
+    <h1>Beginner HTML</h1>
+
+    <h2>Boilerplate</h2>
+    <p>
+        Before getting started with any HTML task we need to establish the 
+        <strong>boilerplate</strong>. The boilerplate establishes things to
+        the web browser such as the DOCTYPE, we also need the &lt;html&gt; tags
+        which are referred to as the <strong>root</strong> element of the document.
+    </p>
+    <p><em>The root element is also where we establish the language using lang="en"</em></p>
+    <p>
+        Within the root element is where we will find the <strong>head</strong> and 
+        <strong>body</strong> elements. The head contains such information as the metadata
+        and page title. The body is where all of the content for our page is going to live.
+    </p>
+
+    <!-- This is a comment in order to do a comment in VS Code we can use the shortcut CTRL + / -->
+
+    <h2>Managing Text</h2>
+    <p>
+        Once the boilerplate has been established we can start to build out the content that we 
+        want displaying on our page.
+    </p>
+    <p>
+        If we were to just fill the body with text, no matter how we format the text within
+        our text editor it will come out all bunched together. This is because we need to 
+        give the browser tags so it knows how to display the information.
+    </p>
+    <p>
+        To begin with we are just using the heading (h1-h6) tags to define our heirarchy and
+        then the paragraph tag (&lt;p&gt;) to establish our paragraphs of text. 
+    </p>
+    <p>
+        Within these we can provide some formatting to our content using the strong and emphasis
+        tags. The strong tag makes the content within it <strong>bold</strong> whereas the 
+        emphasis tag (&lt;em&gt;) puts it in <em>italics</em>.
+    </p>
+    <p>
+        Very often you will see the use of &lt;b&gt; and &lt;i&gt; to create bold and italic text.
+        The issue with this is that it is just a visual change and does not add any meaning to the 
+        text. The meaing provided by &lt;strong&gt; and &lt;em&gt; is vitally important for website
+        accessibility if users are using tools such as a screen reader.
+    </p>
+
+    <h2>Lists</h2>
+    <p>
+        Lists are obviously incredibly useful, we have 2 main types <strong>ordered</strong>
+        and <strong>unordered</strong>.
+    </p>
+    <p>
+        To create a basic unordered list we use the tag &lt;ul&gt; and each item in the 
+        list is created with the &lt;li&gt; tag. Every item within an unordered list 
+        will display as an item with a bullet point. See the example below:
+    </p>
+    <ul>
+        <li>This</li>
+        <li>is</li>
+        <li>an</li>
+        <li>unordered</li>
+        <li>list</li>
+    </ul>
+    <p>An ordered list uses the &lt;ol&gt; tag and will create a numbered list. Items within 
+        the list are still created using the &lt;li&gt; tag. See example below:
+    </p>
+    <ol>
+        <li>This</li>
+        <li>is</li>
+        <li>an</li>
+        <li>ordered</li>
+        <li>list</li>
+    </ol>
+
+    <h2>Links</h2>
+
+    <h3>Anchor Tags</h3>
+    <p>
+        In order to create a link we use the <strong>anchor</strong> element which has the tag
+        &lt;a&gt;. However, just using the anchor tage will not do anything we need to use a
+        <strong>HTML Attribute</strong> to tell it a destination.
+    </p>
+    <p>
+        An <strong>attribute</strong> is usually made up of two parts a name and a value.
+        The attribute we use in this case is href (hypertext reference). Anchor tags don't 
+        just got to links they can also be used for videos, pdf files, images and most importantly
+        other HTML documents.
+    </p>
+
+    <h3>Other Attributes</h3>
+    <p>
+        Some other attributes we might use with an anchor tag could be: 
+        <ul>
+            <li>target = determines where to open link. _self value means same tab, _blank means new tab</li>
+            <li>rel = Describes the relation between the current page and linked resource.
+                Two most relevant values:
+                <ul>
+                    <li>noopener = prevents new tab from accessing original page</li>
+                    <li>noreferrer = same as noopener but also prevents certain details about
+                        original page being shared.
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <h3>Absolute and relative</h3>
+    <p>
+        <strong>Absolute</strong> links to pages on other websites and will always contain the
+        scheme and domain of the desitination.
+    </p>
+    <p>
+        <strong>Relative</strong> links to other pages within your own site. They do not contain
+        the domain name as they obviously dont need them. As our index.html is always going to
+        be in the root directory it is best to make a new directory to store the pages we are going
+        to be linking to.
+
+        Here is a link to the lists page completed earlier: <a href="./pages/lists.html">Lists</a>
+    </p>
+    <p>
+        The anchor arguement looks like this &lt;a href="./pages/lists.html"&gt;Lists&lt;/a&gt;
+    </p>
+    <p>
+        The . makes the code start looking for the file/directory relative to the current directory.
+        In this case pages is the name of the directory I made to store the pages and lists.html is 
+        the name of the document.
+    </p>
+
+    <h2>Images</h2>
+    <p>
+        We can embed images into our website using the &lt;img&gt; element. This is an example of a 
+        void element. We use the src="" attribute to define the location of the image. Like with links
+        this can be absolute or relative. Again to improve accessibility we may choose to use the alt=""
+        attribute which provides alternative text, used by screen readers. Usually we will end up
+        using CSS to modify our images, however, it is still good practice to specify the height and width
+        attributes using the actual size of the image.
+    </p>
+    <p>
+        Put all these steps together and it allows us to display images like this!
+    </p>
+    <img src="./img/dog.jpg" alt="Cute dog with yellow background" height="853" width="640">
+</body>
+</html>
