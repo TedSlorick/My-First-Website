@@ -23,7 +23,7 @@ p:hover {
 /* I centered the image of the dog but don't understand why this is so
 challenging or why the display: block; is necessary */
 
-#dog {
+#dog-photo {
     position: relative;
     height: 200px;
     width: auto;
@@ -32,12 +32,16 @@ challenging or why the display: block; is necessary */
     display: block;
 }
 
+/* Line Separator in between sections */
+
 .line-separator {
     height: 2px;
     width: 100%;
     background-color: #101828;
     margin: 10px 0px;    
 }
+
+/* Navigation Buttons */
 
 .nav-button {
     background-color: #101828;
@@ -60,22 +64,44 @@ challenging or why the display: block; is necessary */
     text-align: center;
 }
 
+/* Markdown Code */
+
 .md-code-block {
     background-color: #1e1e1e;
     color: #d4d4d4;
     font-family: 'Courier New', Courier, monospace;
-    padding: 16px;
-    border-radius: 6px;
+    padding: 18px;
+    border-radius: 8px;
     overflow-x: auto;
     line-height: 1.5; 
 }
 
-.highlight {
+.md-code-inline {
     background-color: #1e1e1e;
     color:#d4d4d4;
     font-family: 'Courier New', Courier, monospace;
-    padding: 0.5rem;
+    padding: 0.25rem 0.5rem;
     display: inline-block;
     margin: 5px;
     border-radius: 0.25rem;
+}
+
+.selector {
+    color: #d7ba7d;
+    display: inline;
+}
+
+.property {
+    color: #79dcef; 
+    display: inline;
+}
+
+.value {
+    color: #ce9178;
+    display: inline;
+}
+
+.notes {
+    color: #8b949e;
+    display: inline;
 }

@@ -17,12 +17,14 @@
             up of a few different components: <strong>selector</strong>, <strong>property</strong>,
             and <strong>value</strong>.
         </p>
+
         <pre class="md-code-block"><code>
-            .button{
-                background-color: white;
-                padding: 10px
+            <div class="selector">.button</div>{
+                <div class="property">background-color</div>: <div class="value">white</div>;   <div class="notes">/* Sets background white and adds padding to class="button" */</div>
+                <div class="property">padding</div>: <div class="value">10px</div>;
             }
         </code></pre>
+
         <p>
             Above is an example of what a CSS rule may look like, in this case; .button is the
             selector, background-color and padding are the properties, white and 10px are the 
@@ -37,10 +39,10 @@
             the CSS rules should be applied too. The available selectors include but is not limited to:
         </p>
         <ul>
-            <li><strong>Universal Selector</strong> - <div class="highlight">*</div> (affects the whole document)</li>
-            <li><strong>Type Selectors</strong> - <div class="highlight">p</div> (affects all elements with the p tag)</li>
-            <li><strong>Class Selectors</strong> - <div class="highlight">.button</div> (affects all elements with attribute class="button")</li>
-            <li><strong>ID Selectors</strong> - <div class="highlight">#dog</div> (affects all elements with attribute id="dog")</li>
+            <li><strong>Universal Selector</strong> - <div class="md-code-inline">*</div> (affects the whole document)</li>
+            <li><strong>Type Selectors</strong> - <div class="md-code-inline">p</div> (affects all elements with the p tag)</li>
+            <li><strong>Class Selectors</strong> - <div class="md-code-inline">.button</div> (affects all elements with attribute class="button")</li>
+            <li><strong>ID Selectors</strong> - <div class="md-code-inline">#dog</div> (affects all elements with attribute id="dog")</li>
         </ul>
         <p>
             <em>The major difference between ID and Class selectors is that any given HTML element can only
