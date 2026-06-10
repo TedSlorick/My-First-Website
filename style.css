@@ -16,6 +16,10 @@ p {
     font-weight: 500;
 }
 
+p:hover {
+    background-color:aliceblue;
+}
+
 /* I centered the image of the dog but don't understand why this is so
 challenging or why the display: block; is necessary */
 
