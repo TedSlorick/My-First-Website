@@ -3,12 +3,12 @@
 body {
     margin: 40px;
     color: #101828;
-    font-family: "Manrope";
+    font-family: sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-size: 58px;
+    font-size: 3.5rem;
     font-weight: 800;
     }
 
@@ -35,5 +35,47 @@ challenging or why the display: block; is necessary */
 .line-separator {
     height: 2px;
     width: 100%;
-    background-color: #101828;    
+    background-color: #101828;
+    margin: 10px 0px;    
+}
+
+.nav-button {
+    background-color: #101828;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    margin: 1rem;
+    display: inline-block;
+}
+
+.nav-button:hover {
+    size-adjust: 105%;
+}
+
+.btn-parent {
+    text-align: center;
+}
+
+.md-code-block {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px;
+    border-radius: 6px;
+    overflow-x: auto;
+    line-height: 1.5; 
+}
+
+.highlight {
+    background-color: #1e1e1e;
+    color:#d4d4d4;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.5rem;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 0.25rem;
 }

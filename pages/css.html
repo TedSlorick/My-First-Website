@@ -8,6 +8,45 @@
 </head>
 <body>
     <h1>Beginner CSS</h1>
-    <button><a href="../index.html">Return</a></button>
+    <div class="line-separator"></div>
+
+    <h2>Basic Syntax</h2>
+        <p>
+            As a basic intro, CSS is essentially a list of rules which tells our
+            HTML elements how they should be displayed. Each of these rule is made
+            up of a few different components: <strong>selector</strong>, <strong>property</strong>,
+            and <strong>value</strong>.
+        </p>
+        <pre class="md-code-block"><code>
+            .button{
+                background-color: white;
+                padding: 10px
+            }
+        </code></pre>
+        <p>
+            Above is an example of what a CSS rule may look like, in this case; .button is the
+            selector, background-color and padding are the properties, white and 10px are the 
+            values.
+        </p>
+
+    <div class="line-separator"></div>
+
+    <h2>Selectors</h2>
+        <p>
+            I just mentioned selectors, but what are they? Selectors are the HTML elements which 
+            the CSS rules should be applied too. The available selectors include but is not limited to:
+        </p>
+        <ul>
+            <li><strong>Universal Selector</strong> - <div class="highlight">*</div> (affects the whole document)</li>
+            <li><strong>Type Selectors</strong> - <div class="highlight">p</div> (affects all elements with the p tag)</li>
+            <li><strong>Class Selectors</strong> - <div class="highlight">.button</div> (affects all elements with attribute class="button")</li>
+            <li><strong>ID Selectors</strong> - <div class="highlight">#dog</div> (affects all elements with attribute id="dog")</li>
+        </ul>
+        <p>
+            <em>The major difference between ID and Class selectors is that any given HTML element can only
+                have one class selector.</em>
+        </p>
+
+    <div class="btn-parent"><a class="nav-button" href="../index.html">Return</a></div>
 </body>
 </html>
